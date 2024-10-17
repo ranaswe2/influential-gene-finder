@@ -20,4 +20,37 @@ DSigDB database from Enrichr.
 ![Welcome](images/home.png)
 
 ## Registration
-![Registration](images/registration.png)
+![Registration](images/register.png)
+
+## Login
+![Login](images/login.png)
+
+## Dashboard
+![Dashboard](images/dashboard.png)
+
+## Influential Genes
+![IFGs](images/ifgs.png)
+
+## Drug Candidates
+![Drug Candidates](images/drugc.png)
+
+## Statistical Report
+![Report](images/report.png)
+
+## User Profile & History
+![Profhis](images/profile.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
