@@ -22,6 +22,9 @@ DSigDB database from Enrichr.
 ## Registration
 ![Registration](images/register.png)
 
+## Account Verification
+![OTP](images/otp.png)
+
 ## Login
 ![Login](images/login.png)
 
