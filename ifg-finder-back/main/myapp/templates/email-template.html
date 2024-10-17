@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passcode Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #000000;
+            color: white;
+        }
+        .passcode {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .expiration {
+            font-size: 14px;
+            color: #CCCCCC;
+        }
+        .footer {
+            margin-top: 40px;
+            color: #CCCCCC;
+        }
+        a {
+            color: #CCCCCC;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Main content -->
+        <div class="content">
+            <img src="https://i.imgur.com/zj6HttQ.png" alt="IFG Finder Logo" style="width: 50px; height: auto;">
+            <p>Here is your OTP:</p>
+            <div class="passcode">{{ passcode }}</div>
+            <p>Facing problems? Just reply to this email.</p>
+        </div>
+
+    </div>
+</body>
+</html>

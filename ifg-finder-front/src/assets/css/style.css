@@ -1,0 +1,219 @@
+
+
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #08061a;
+}
+.log_container{
+  position: relative;
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  perspective: 2700px;
+}
+.log_container .log_cover{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transition: all 1s ease;
+  transform-origin: left;
+  transform-style: preserve-3d;
+}
+.log_container #flip:checked ~ .log_cover{
+  transform: rotateY(-180deg);
+}
+ .log_container .log_cover .log_front,
+ .log_container .log_cover .log_back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.log_cover .log_back{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.log_container .log_cover::before,
+.log_container .log_cover::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #08061a;
+  opacity: 0.5;
+  z-index: 12;
+}
+.log_container .log_cover::after{
+  opacity: 0.3;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.log_container .log_cover img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+.log_container .log_cover .log_text{
+  position: absolute;
+  z-index: 130;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.log_cover .log_text .log_text-1,
+.log_cover .log_text .log_text-2{
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.log_cover .log_text .log_text-2{
+  font-size: 15px;
+  font-weight: 500;
+}
+.log_container .log_forms{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.log_container .log_form-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.log_form-content .log_login-form,
+.log_form-content .log_signup-form{
+  width: calc(100% / 2 - 25px);
+}
+.log_forms .log_form-content .log_title{
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+.log_forms .log_form-content .log_title:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: #08061a;
+}
+.log_forms .log_signup-form  .log_title:before{
+  width: 20px;
+}
+.log_forms .log_form-content .log_input-boxes{
+  margin-top: 30px;
+}
+.log_forms .log_form-content .log_input-box{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 220%;
+  margin: 10px 0;
+  position: relative;
+}
+.log_form-content .log_input-box input{
+  height: 100%;
+  width: 220%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.log_form-content .log_input-box input:focus,
+.log_form-content .log_input-box input:valid{
+  border-color: #08061a;
+}
+.log_form-content .log_input-box i{
+  position: absolute;
+  color: #08061a;
+  font-size: 17px;
+}
+.log_forms .log_form-content .log_text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.log_forms .log_form-content .log_text a{
+  text-decoration: none;
+}
+.log_forms .log_form-content .log_text a:hover{
+  text-decoration: underline;
+}
+.log_forms .log_form-content .log_button{
+  color: #fff;
+  margin-top: 40px;
+}
+.log_forms .log_form-content .log_button input{
+  color: #fff;
+  background: #08061a;
+  border-radius: 6px;
+  padding: 10;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  width: auto;
+}
+.log_forms .log_form-content .log_button input:hover{
+  background: #08061a;
+}
+.log_forms .log_form-content label{
+  color: #08061a;
+  cursor: pointer;
+}
+.log_forms .log_form-content label:hover{
+  text-decoration: underline;
+}
+.log_forms .log_form-content .log_login-text,
+.log_forms .log_form-content .log_sign-up-text{
+  text-align: left;
+  margin-top: 25px;
+  width: 300%;
+}
+.log_container #flip{
+  display: none;
+}
+@media (max-width: 730px) {
+  .log_container .log_cover{
+    display: none;
+  }
+  .log_form-content .log_login-form,
+  .log_form-content .log_signup-form{
+    width: 100%;
+  }
+  .log_form-content .log_signup-form{
+    display: none;
+  }
+  .log_container #flip:checked ~ .log_forms .log_signup-form{
+    display: block;
+  }
+  .log_container #flip:checked ~ .log_forms .log_login-form{
+    display: none;
+  }
+}
