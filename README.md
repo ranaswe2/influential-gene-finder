@@ -12,7 +12,7 @@ the p-value < 0.05 and the highest number of IFGs enriched with each drug utiliz
 DSigDB database from Enrichr.
 
 # How to Run
-* To run the back-end (Django) project, install python3 and nodeJS. Then open command prompt in the ifg-finder-back project folder and then execute Django run command "py manage.py runserver".
+* To run the back-end (Django) project, install python3 and nodeJS, start MySQL server. Then open command prompt in the ifg-finder-back project folder and then execute Django run command "py manage.py runserver".
 * To run the front-end (ReactJS) project, open command prompt in the ifg-finder-front project folder and then execute ReactJS run command "npm start"
 
 # Application Overview
