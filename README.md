@@ -14,7 +14,7 @@ DSigDB database from Enrichr.
 # Features
 User Roles
 ## Admin
-Create, Read, Update and Delete User data as well as other information
+Create, Read, Update and Delete User data as well as other information (Default Activities of DRF Superuser)
 ## General Users
 1. Create Account and Access to Account
 * User registration by providing e-mail and necessary data
@@ -65,15 +65,18 @@ Create, Read, Update and Delete User data as well as other information
 * To run the back-end (Django) project, install python3 and nodeJS, start MySQL server. Then open command prompt in the ifg-finder-back project folder and then execute Django run command "py manage.py runserver".
 * To run the front-end (ReactJS) project, open command prompt in the ifg-finder-front project folder and then execute ReactJS run command "npm start"
 
-# Application Overview
+# Application Overview (General User)
 ## Home Page 
 ![Welcome](images/home.png)
 
 ## Registration
 ![Registration](images/register.png)
 
-## Account Verification
+## OTP to E-mail
 ![OTP](images/otp.png)
+
+## Account Verification
+![Verification](images/otp-verify.png)
 
 ## Login
 ![Login](images/login.png)
