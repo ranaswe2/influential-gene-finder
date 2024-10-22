@@ -97,6 +97,12 @@ Create, Read, Update and Delete User data as well as other information (Default 
 ![Profhis](images/profile.png)
 
 
+# ACKNOWLEDGEMENT
+This project receives funding from the Noakhali Science
+and Technology University Research Cell for the financial year
+2024-25.
+
+
 
 
 
